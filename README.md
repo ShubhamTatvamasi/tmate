@@ -7,7 +7,7 @@ crontab -e
 
 add the following line:
 ```
-@reboot bash -c "tmate -F"
+@reboot tmate -F
 ```
 
 update the config `~/.tmate.conf`
