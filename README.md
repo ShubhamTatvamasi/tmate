@@ -1,9 +1,16 @@
 # tmate
 
-https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz
-
+install tmate:
 ```bash
-tar -xf backup.tar.xz
+export TMATE_VERSION=2.4.0
+
+wget https://github.com/tmate-io/tmate/releases/download/$TMATE_VERSION/tmate-$TMATE_VERSION-static-linux-amd64.tar.xz
+tar -xf tmate-$TMATE_VERSION-static-linux-amd64.tar.xz
+sudo mv tmate-$TMATE_VERSION-static-linux-amd64/tmate /usr/local/bin
+
+# Clean up
+rmdir tmate-$TMATE_VERSION-static-linux-amd64
+rm tmate-$TMATE_VERSION-static-linux-amd64.tar.xz
 ```
 
 open crontab:
