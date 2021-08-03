@@ -2,6 +2,10 @@
 
 https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz
 
+```bash
+tar -xf backup.tar.xz
+```
+
 open crontab:
 ```bash
 crontab -e
